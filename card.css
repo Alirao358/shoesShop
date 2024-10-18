@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    background: lightgray;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 16px;
+
+}
+.card__image {
+    height: 200px;
+    width: 100%;
+    background-image: url(/images/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    position: relative;
+}
+
+.image--addToCart {
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+}
+.card__name {
+    color: #425466;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0px 5px 10px ;
+    text-transform: capitalize;
+}
+.card__price {
+    color: #27272E;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0px 10px 10px ;
+}
